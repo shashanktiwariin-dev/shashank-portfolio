@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shashank Tiwari — WordPress Developer. Fast, scalable WordPress experiences from pixel-perfect themes to headless architectures." />
+  <meta name="description" content="Shashank Tiwari — WordPress Developer crafting fast, scalable WordPress experiences." />
   <title>Portfolio — Shashank Tiwari · WordPress Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,15 +12,12 @@
 </head>
 <body>
 
-<!-- Custom cursor (desktop only) -->
 <div class="cursor"      id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- ═══ NAV ═══════════════════════════════════════════════════ -->
+<!-- ════ NAV ══════════════════════════════════════════════════ -->
 <nav id="nav">
   <a href="#hero" class="nav-logo">S<span>.</span>dev</a>
-
-  <!-- Desktop links -->
   <div class="nav-right">
     <ul class="nav-links">
       <li><a href="#about">about</a></li>
@@ -28,33 +25,27 @@
       <li><a href="#skills">skills</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
-
-    <!-- Theme toggle -->
     <div class="theme-toggle-wrap">
-      <span class="theme-icon" id="iconSun" aria-hidden="true">☀️</span>
+      <span class="theme-icon" id="iconSun">☀️</span>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme"></button>
-      <span class="theme-icon" id="iconMoon" aria-hidden="true">🌙</span>
+      <span class="theme-icon" id="iconMoon">🌙</span>
     </div>
-
-    <!-- Hamburger (mobile) -->
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<!-- Mobile slide-down menu -->
-<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+<div class="mobile-menu" id="mobileMenu">
   <a href="#about">about</a>
   <a href="#projects">work</a>
   <a href="#skills">skills</a>
   <a href="#contact">contact</a>
 </div>
 
-<!-- ═══ HERO ════════════════════════════════════════════════════ -->
+<!-- ════ HERO ══════════════════════════════════════════════════ -->
 <section id="hero">
   <div class="hero-grid-bg" aria-hidden="true"></div>
-
   <p class="hero-eyebrow">// WordPress Developer</p>
   <h1 class="hero-name">Shashank<br>Tiwari</h1>
   <p class="hero-sub">
@@ -68,14 +59,13 @@
             stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
   </a>
-
   <div class="hero-scroll-hint" aria-hidden="true">
     <span>scroll</span>
     <div class="scroll-line"></div>
   </div>
 </section>
 
-<!-- ═══ ABOUT ═══════════════════════════════════════════════════ -->
+<!-- ════ ABOUT ═════════════════════════════════════════════════ -->
 <section id="about">
   <p class="section-label reveal">// 01 — about</p>
   <h2 class="section-title reveal">Who I Am</h2>
@@ -110,13 +100,43 @@
   </div>
 </section>
 
-<!-- ═══ PROJECTS ════════════════════════════════════════════════ -->
+<!-- ════ PROJECTS ══════════════════════════════════════════════
+     TO ADD A PROJECT: copy one .project-card block below and
+     paste it inside #projectsGrid. Fill in your own details.
+     The first 6 cards show by default; extras are revealed
+     when the visitor clicks "Show More Projects".
+     ════════════════════════════════════════════════════════════ -->
 <section id="projects">
   <p class="section-label reveal">// 02 — work</p>
   <h2 class="section-title reveal">Selected Projects</h2>
 
-  <div class="projects-grid reveal">
+  <div class="projects-grid reveal" id="projectsGrid">
 
+    <!-- ── PROJECT 1 ── -->
+      <div class="project-card">
+      <div class="project-tag">Wordpress / PHP</div>
+      <h3 class="project-title">iDigilogic</h3>
+      <p class="project-desc">iDigilogic is an IT services and consulting company specializing in web and application development, IT consulting, and outsourcing solutions across healthcare, insurance, and banking sectors.
+</p>
+      <div class="project-tech">
+        <span class="tech-pill">Wordpress</span>
+        <span class="tech-pill">Slider Revolution</span>
+        <span class="tech-pill">Elementor</span>
+      </div>
+      <a href="https://www.idigilogic.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
+    </div>
+     <div class="project-card">
+      <div class="project-tag">Wordpress</div>
+      <h3 class="project-title">CleverShark</h3>
+      <p class="project-desc">Engineered a high-performance, conversion-optimized web platform for a digital transformation agency. The focus was on creating a modern, "tech-forward" UI while maintaining a lightweight backend to ensure sub-5-second load times.
+</p>
+      <div class="project-tech">
+        <span class="tech-pill">Wordpress</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">Bootstrap</span>
+      </div>
+      <a href="https://clevershark.com.au/" class="project-link" target="_blank" rel="noopener">View Project →</a>
+    </div>
     <div class="project-card">
       <div class="project-tag">Laravel / MVC</div>
       <h3 class="project-title">Axat Technologies</h3>
@@ -131,6 +151,7 @@
       <a href="https://www.axattechnologies.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
 
+    <!-- ── PROJECT 2 ── -->
     <div class="project-card">
       <div class="project-tag">WordPress / Elementor</div>
       <h3 class="project-title">Tauschen Groups</h3>
@@ -145,8 +166,9 @@
       <a href="https://tauschengroups.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
 
+    <!-- ── PROJECT 3 ── -->
     <div class="project-card">
-      <div class="project-tag">WooCommerce Custom Plugin</div>
+      <div class="project-tag">WooCommerce Plugin</div>
       <h3 class="project-title">Fit &amp; Healthy Chef</h3>
       <p class="project-desc">Last-Minute Popup Checkout plugin for a Healthy Meal Prep Delivery
          service in Sydney — streamlining order placement at the final step of checkout.</p>
@@ -159,9 +181,10 @@
       <a href="https://ordering.fitandhealthychef.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
 
+    <!-- ── PROJECT 4 ── -->
     <div class="project-card">
       <div class="project-tag">Performance / Optimisation</div>
-      <h3 class="project-title">Piplon Sports — PPL Cricket Platform</h3>
+      <h3 class="project-title">Piplon Sports — PPL Cricket</h3>
       <p class="project-desc">Modern sports platform introducing an innovative cricket league
          format that gives equal opportunities to aspiring players across India.</p>
       <div class="project-tech">
@@ -173,9 +196,10 @@
       <a href="https://piplonsports.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
 
+    <!-- ── PROJECT 5 ── -->
     <div class="project-card">
       <div class="project-tag">Shopify</div>
-      <h3 class="project-title">Rania Zara — Luxury Fashion Store</h3>
+      <h3 class="project-title">Rania Zara — Luxury Fashion</h3>
       <p class="project-desc">UK-based luxury fashion platform specialising in premium Pakistani
          designer wear — bridal couture, formal outfits, and ready-to-ship collections.</p>
       <div class="project-tech">
@@ -187,6 +211,7 @@
       <a href="https://www.raniazara.co.uk/" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
 
+    <!-- ── PROJECT 6 ── -->
     <div class="project-card">
       <div class="project-tag">WordPress</div>
       <h3 class="project-title">Emerge Arts &amp; Media</h3>
@@ -201,10 +226,52 @@
       <a href="https://emergeartsandmedia.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
 
+    <!-- ══════════════════════════════════════════════════════
+         EXTRA PROJECTS (hidden by default, revealed on click)
+         ══════════════════════════════════════════════════════ -->
+
+    <!-- ── PROJECT 7 ── -->
+    <div class="project-card">
+      <div class="project-tag">WordPress / Elementor</div>
+      <h3 class="project-title">Caseteam</h3>
+      <p class="project-desc">CASETEAM is the world’s first genAI-native and hybrid-first management consulting firm (based on public records). We are headquartered in Silicon Valley and operate worldwide, delivering borderless client service.</p>
+      <div class="project-tech">
+        <span class="tech-pill">WordPress</span>
+        <span class="tech-pill">PHP</span>
+        <span class="tech-pill">Elementor</span>
+      </div>
+      <a href="https://caseteam.com/" class="project-link" target="_blank" rel="noopener">View Project →</a>
+    </div>
+
+    <!-- ── PROJECT 8 ── -->
+    <div class="project-card">
+      <div class="project-tag">WooCommerce</div>
+      <h3 class="project-title">Revive Earth Enterprises</h3>
+      <p class="project-desc">Waste is increasingly recognized as a valuable resource, and Revive Earth Enterprises is committed to transforming plastic waste into sustainable value through responsible recycling practices. </p>
+      <div class="project-tech">
+        <span class="tech-pill">WooCommerce</span>
+        <span class="tech-pill">PHP</span>
+        <span class="tech-pill">JavaScript</span>
+      </div>
+      <a href="https://reviveearth.in/" class="project-link" target="_blank" rel="noopener">View Project →</a>
+    </div>
+
+    <!-- ── ADD MORE PROJECTS HERE — just copy a block above ── -->
+
+  </div><!-- /projectsGrid -->
+
+  <div class="projects-toggle-wrap">
+    <button class="btn-show-more" id="showMoreBtn" aria-expanded="false">
+      <span class="btn-label">Show More Projects</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
   </div>
 </section>
 
-<!-- ═══ SKILLS ═══════════════════════════════════════════════════ -->
+<!-- ════ SKILLS ════════════════════════════════════════════════ -->
 <section id="skills">
   <p class="section-label reveal">// 03 — skills</p>
   <h2 class="section-title reveal">What I Work With</h2>
@@ -220,38 +287,23 @@
         <div class="skill-group-title">// WordPress Core</div>
         <div class="skill-bars">
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">WordPress / Gutenberg</span>
-              <span class="skill-pct">95%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">WordPress / Gutenberg</span><span class="skill-pct">85%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:95%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">Custom Theme Dev</span>
-              <span class="skill-pct">92%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">Custom Theme Dev</span><span class="skill-pct">70%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:92%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">Plugin Development</span>
-              <span class="skill-pct">85%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">Plugin Development</span><span class="skill-pct">65%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:85%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">WooCommerce</span>
-              <span class="skill-pct">85%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">WooCommerce</span><span class="skill-pct">75%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:85%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">Elementor / WPBakery / Divi</span>
-              <span class="skill-pct">85%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">Elementor / WPBakery / Divi</span><span class="skill-pct">80%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:85%"></div></div>
           </div>
         </div>
@@ -261,38 +313,23 @@
         <div class="skill-group-title">// Languages &amp; Tools</div>
         <div class="skill-bars">
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">PHP / OOP</span>
-              <span class="skill-pct">90%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">PHP / OOP</span><span class="skill-pct">60%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:90%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">JavaScript</span>
-              <span class="skill-pct">80%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">JavaScript</span><span class="skill-pct">60%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:80%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">HTML / CSS / SCSS</span>
-              <span class="skill-pct">93%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">HTML / CSS / SCSS</span><span class="skill-pct">80%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:93%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">MySQL</span>
-              <span class="skill-pct">78%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">MySQL</span><span class="skill-pct">50%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:78%"></div></div>
           </div>
           <div class="skill-row">
-            <div class="skill-meta">
-              <span class="skill-name">Git / cPanel / FTP / phpMyAdmin</span>
-              <span class="skill-pct">88%</span>
-            </div>
+            <div class="skill-meta"><span class="skill-name">Git / cPanel / FTP / phpMyAdmin</span><span class="skill-pct">70%</span></div>
             <div class="bar-track"><div class="bar-fill" style="--pct:88%"></div></div>
           </div>
         </div>
@@ -302,7 +339,7 @@
   </div>
 </section>
 
-<!-- ═══ CONTACT ══════════════════════════════════════════════════ -->
+<!-- ════ CONTACT ═══════════════════════════════════════════════ -->
 <section id="contact">
   <p class="section-label reveal">// 04 — contact</p>
   <div class="contact-inner">
@@ -310,7 +347,7 @@
       <h2 class="contact-big">Let's build<br>something<br><span>great.</span></h2>
       <p class="contact-note">Have a WordPress project in mind? I'm available for freelance work
          and long-term collaborations. Let's talk.</p>
-      <a href="mailto:hello@shashank.dev" class="contact-email">hello@shashank.dev</a>
+      <a href="mailto:shashank.tiwari.in@gmail.com" class="contact-email">shashank.tiwari.in@gmail.com</a>
     </div>
     <form class="contact-form reveal" id="contactForm" novalidate>
       <div class="form-field">
@@ -330,13 +367,13 @@
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══════════════════════════════════════════════════ -->
+<!-- ════ FOOTER ════════════════════════════════════════════════ -->
 <footer>
   <p>© 2026 Shashank Tiwari — WordPress Developer</p>
   <div class="footer-links">
     <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+    <a href="https://linkedin.com/in/techbyshashank/" target="_blank" rel="noopener">LinkedIn</a>
+    <!-- <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a> -->
     <a href="#" target="_blank" rel="noopener">Resume</a>
   </div>
 </footer>
